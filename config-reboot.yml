@@ -1,6 +1,6 @@
 ---
 - name: configure cisco routers
-  hosts: routers
+  hosts: 172.16.3.3
   connection: network_cli
   gather_facts: no
 
