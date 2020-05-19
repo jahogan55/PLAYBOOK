@@ -1,0 +1,16 @@
+---
+- name: configure cisco routers
+  hosts: routers
+  connection: network_cli
+  gather_facts: no
+  vars:
+    dns: "8.8.8.8 8.8.4.4"
+
+  tasks:
+   - name: configure hostname
+     ios_config:
+       lines: hostname {{ inventory_hostname }}
+
+   - name: configure DNS
+     ios_config:
+       lines: ip name-server {{dns}}
