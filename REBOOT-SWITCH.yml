@@ -1,6 +1,7 @@
 - name: reboot ios device
   host: all
   tasks:
+    - name
   cli_command:
     command: reload
     prompt:
