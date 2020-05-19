@@ -1,6 +1,7 @@
 ---
 - name: reboot cisco network devices
   hosts: 172.16.3.3
+  ansible_network_os: routeros
   connection: network_cli
   gather_facts: no
 
