@@ -6,5 +6,5 @@
 
   tasks:
    - name: reboot
-     ios_config:
+     cli_command:
        lines: reboot
