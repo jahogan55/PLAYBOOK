@@ -1,4 +1,5 @@
 - name: reboot ios device
+  host: all
   cli_command:
     command: reload
     prompt:
