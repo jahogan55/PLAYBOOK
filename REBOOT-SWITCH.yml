@@ -1,12 +1,12 @@
 - name: reboot ios device
   host: all
   tasks:
-    - name
-  cli_command:
-    command: reload
-    prompt:
-      - Save?
-      - confirm
-    answer:
-     - y
-     - y
+    - name: reboot
+      cli_command:
+      command: reload
+       prompt:
+        - Save?
+        - confirm
+       answer:
+        - y
+        - y
