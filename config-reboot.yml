@@ -1,5 +1,5 @@
 ---
-- name: reboot cisco network devices
+- name: reboot
   hosts: 172.16.3.3
   connection: network_cli
   ansible_network_os: ios
