@@ -1,19 +1,12 @@
 ---
-- name: reboot
-  hosts: 172.16.3.3
-  connection: network_cli
-  ansible_network_os: ios
-  ansible_user: jahogan
-  ansible_password: Inrisc101
-  ansible_become: yes
-  ansible_become_method: enable
-  gather_facts: no
+- name: reboot ios device
+  cli_command:
+    command: reload
+    prompt:
+      - Save?
+      - confirm
+    answer:
+     - y
+     - y
 
-  tasks:
-   - name: reboot
-     ios_command:
-               commands:
-                  - command: "reload"
-                    prompt: '[confirm]'
-                    answer: "\r"
             
