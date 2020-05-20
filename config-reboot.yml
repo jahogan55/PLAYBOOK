@@ -2,6 +2,11 @@
 - name: reboot cisco network devices
   hosts: 172.16.3.3
   connection: network_cli
+  ansible_network_os: ios
+  ansible_user: jahogan
+  ansible_password: Inrisc101
+  ansible_become: yes
+  ansible_become_method: enable
   gather_facts: no
 
   tasks:
