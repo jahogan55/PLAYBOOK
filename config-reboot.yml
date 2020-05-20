@@ -6,7 +6,10 @@
 
   tasks:
    - name: reboot
-     cli_command:
-       - command: "reload"
-         prompt: '[confirm]'
-         answer: "\r"
+     ios_command:
+               commands:
+                  - command: "reload"
+                    prompt: '[confirm]'
+                    answer: "\r"
+            vars:
+              ansible_command_timeout: 30
