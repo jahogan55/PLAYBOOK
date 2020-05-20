@@ -10,6 +10,6 @@
                commands:
                   - command: "reload"
                     prompt: '[confirm]'
-                    answer: "\r"
+                    answer: "yes"
             vars:
               ansible_command_timeout: 30
