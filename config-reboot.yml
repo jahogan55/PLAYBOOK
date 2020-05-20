@@ -7,8 +7,6 @@
   tasks:
    - name: reboot
      cli_command:
-       command: reload
-       prompt: 
-          - confirm
-       answer:
-          - y
+       - command: "reload"
+         prompt: '[confirm]'
+         answer: "\r"
