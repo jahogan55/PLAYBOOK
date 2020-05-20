@@ -1,3 +1,4 @@
+---
 - name: reboot ios device
   cli_command:
     command: reload
