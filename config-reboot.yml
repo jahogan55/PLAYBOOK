@@ -8,3 +8,6 @@
         commands:
          - reload in 30
          - y
+        wait_for:
+        - result[0] contains "Proceed with reload"
+        provider: "{{ cli }}"
