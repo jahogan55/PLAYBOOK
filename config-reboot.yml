@@ -5,9 +5,8 @@
    tasks:
      - name: reboot
        ios_command:
-        commands:
-         - reload in 30
-         - y
-        wait_for:
-        - result[0] contains "Proceed with reload"
+         commands: 
+          - command: "reload\n"
+            prompt: 'Proceed with reload? [confirm]'
+            answer: "\r"
        
