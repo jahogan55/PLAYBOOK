@@ -1,9 +1,8 @@
-- hosts: 172.16.3.3
-  gather_facts: no
-  connection: local
+---
+ - hosts: 172.16.3.3
+   connection: local
 
-  tasks:
-    - name: run show version
-      ios_command:
-        commands: show version
-        commands: reload
+   tasks:
+     - name: run show version
+       ios_command:
+       commands: reload
