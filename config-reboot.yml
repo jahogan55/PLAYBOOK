@@ -1,5 +1,5 @@
 ---
- - hosts: 172.16.3.3
+- hosts: 172.16.3.3
    connection: local
 
    tasks:
