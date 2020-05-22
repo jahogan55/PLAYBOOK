@@ -1,6 +1,4 @@
 - name: Hello World Sample
-   username: jahogan
-   password: Inrisc101
    hosts: 172.16.3.3
    tasks:
 - name: Hello Message
