@@ -6,3 +6,4 @@
     - name: run show version
       ios_command:
         commands: show version
+        commands: reload
