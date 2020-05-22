@@ -1,5 +1,4 @@
 - name: Hello World Sample
-   connection: local
    tasks:
 - name: Hello Message
       debug:
