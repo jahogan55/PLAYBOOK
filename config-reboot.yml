@@ -3,6 +3,6 @@
    connection: local
 
    tasks:
-     - name: run show version
+     - name: reboot
        ios_command:
-       commands: reload
+         commands: reload
