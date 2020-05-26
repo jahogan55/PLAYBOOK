@@ -3,3 +3,5 @@
   connection: local
 - asa_config:
     hosts: 172.16.5.1
+    lines:
+    - clear xlate
