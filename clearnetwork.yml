@@ -4,7 +4,6 @@
 
    tasks:
      - name: asa_clear
-       hosts: 172.16.5.1
        asa_command:
          commands: 
           - command: "clear xlate"
