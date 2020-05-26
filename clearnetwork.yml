@@ -1,11 +1,11 @@
 ---
-- name: "Show the ASA version"
-  asa_command:
-    commands:
-      - show version
+ - hosts: 172.16.5.1
+   connection: local
 
-- name: "Show ASA drops and memory"
-  asa_command:
-    commands:
-      - show asp drop
-      - show memory
+   tasks:
+     - name: asa_clear
+       iasa_command:
+         commands: 
+          - command: "clear xlate"
+            
+       
