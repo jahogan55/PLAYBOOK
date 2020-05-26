@@ -1,6 +1,7 @@
 - name: clear network config
   hosts: network
   connection: local
+  
 - name: xlate
   asa_command:
     commands:
