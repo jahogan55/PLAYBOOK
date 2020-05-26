@@ -10,5 +10,7 @@
        asa_command:
          commands: 
           - command: "clear xlate"
+          - command: "clear arp inside"
+          - command: "clear mac-address-table"
             
        
