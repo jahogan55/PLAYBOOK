@@ -1,3 +1,4 @@
+---
 - name: clear network config
   hosts: network
   connection: local
