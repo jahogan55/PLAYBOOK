@@ -4,7 +4,7 @@
 
    tasks:
      - name: asa_clear
-       iasa_command:
+       asa_command:
          commands: 
           - command: "clear xlate"
             
