@@ -1,6 +1,6 @@
 ---
-- name: xlate
-  hosts: 172.16.5.1
+- name: "Show ASA drops and memory"
   asa_command:
     commands:
-      - clear xlate
+      - show asp drop
+      - show memory
