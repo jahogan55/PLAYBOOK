@@ -1,9 +1,6 @@
 ---
-- name: clear network config
-  hosts: network
-  connection: local
-  
 - name: xlate
+  hosts: 172.16.5.1
   asa_command:
     commands:
       - clear xlate
