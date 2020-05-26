@@ -2,4 +2,4 @@
   hosts: network
   connection: local
 - asa_config:
-    host: 172.16.5.1
+    hosts: 172.16.5.1
