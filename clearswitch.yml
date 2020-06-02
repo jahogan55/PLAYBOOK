@@ -6,8 +6,8 @@
    become_method: enable
 
    tasks:
-     - name: clear stp and routing
+     - name: clear
        ios_config:
-         lines: 
+         lines:
           - show ver
           
