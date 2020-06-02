@@ -1,5 +1,5 @@
 ---
- - hosts: switches
+ - hosts: all
    connection: local
    gather_facts: no
    become: yes
