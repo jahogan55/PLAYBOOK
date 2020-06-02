@@ -6,8 +6,8 @@
    become_method: enable
 
    tasks:
-     - name: 
-       asa_command:
+     - name: clear stp and routing
+       network_cli:
          commands: 
           - command: "clear xlate"
           - command: "clear arp inside"
