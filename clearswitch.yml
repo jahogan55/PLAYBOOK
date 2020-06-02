@@ -7,7 +7,7 @@
 
    tasks:
      - name: clear
-       ios_config:
-         lines:
+       ios_command:
+         commands:
           - show ver
           
