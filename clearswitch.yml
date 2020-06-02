@@ -1,0 +1,14 @@
+---
+ - hosts: 172.16.5.1
+   connection: local
+   gather_facts: no
+   become: yes
+   become_method: enable
+
+   tasks:
+     - name: asa_clear
+       asa_command:
+         commands: 
+          - command: "clear xlate"
+          - command: "clear arp inside"
+          - command: "clear mac-address-table"
