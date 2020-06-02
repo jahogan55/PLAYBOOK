@@ -1,12 +1,12 @@
 ---
- - hosts: 172.16.5.1
+ - hosts: SWITCHES
    connection: local
    gather_facts: no
    become: yes
    become_method: enable
 
    tasks:
-     - name: asa_clear
+     - name: 
        asa_command:
          commands: 
           - command: "clear xlate"
