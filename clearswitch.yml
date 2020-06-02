@@ -7,8 +7,7 @@
 
    tasks:
      - name: clear stp and routing
-       network_cli:
-         commands: 
-          - command: "clear xlate"
-          - command: "clear arp inside"
-          - command: "clear mac-address-table"
+       ios_config:
+         lines: 
+          - show ver
+          
