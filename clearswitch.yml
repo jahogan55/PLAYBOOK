@@ -9,5 +9,5 @@
      - name: clear
        ios_command:
          commands:
-          - show ver
+          - mac address-table notification mac-move
           
