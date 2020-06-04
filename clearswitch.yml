@@ -11,7 +11,7 @@
          commands:
           - configure terminal
           - mac address-table notification mac-move
-          - clear mac address-table dydnamic
+          - clear mac address-table dynamic
           - clear arp-cache
           
           
