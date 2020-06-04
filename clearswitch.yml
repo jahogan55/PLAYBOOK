@@ -13,6 +13,7 @@
           - mac address-table notification mac-move
           - exit
           - clear mac address-table dynamic
+          - clear ip cef inconsistency
           - clear arp-cache
           
           
