@@ -11,5 +11,6 @@
          commands:
           - configure terminal
           - mac address-table notification mac-move
+          - clear spanning-tree counters
           
           
