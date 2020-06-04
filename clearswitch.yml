@@ -9,6 +9,7 @@
      - name: clear
        ios_command:
          commands:
+          - configuration terminal
           - mac address-table notification mac-move
           
           
