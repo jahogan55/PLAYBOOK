@@ -6,12 +6,15 @@
    become_method: enable
 
    tasks:
-     - name: clear
+     - name: mac addres
        ios_command:
          commands:
           - configure terminal
           - mac address-table notification mac-move
           - exit
+     - name: clear
+       ios_command:
+         commands: 
           - clear mac address-table dynamic
           - clear ip cef inconsistency
           - clear arp-cache
