@@ -11,6 +11,7 @@
          name: "*"
          state: latest
          use_backend: auto
+       become: true
          
      - name: ensure wget is installed
        yum:
@@ -18,6 +19,7 @@
          state: present
          update_cache: true
          use_backend: auto
+       become: true
          
      - name: install redis on RHEL based distros
        yum:
@@ -25,3 +27,4 @@
          state: present
          update_cache: true
          use_backend: auto
+       become: true
