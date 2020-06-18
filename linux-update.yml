@@ -2,8 +2,8 @@
 - hosts: all
   connection: local
   gather_facts: no
-  become: yes
-  become_method: sudo
+  become_user: root
+  become_method: su
    
   tasks:
      - name: update the system
