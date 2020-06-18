@@ -15,11 +15,11 @@
          name: wget
          state: present
          update_cache: true
-         become: true
+       become: true
      - name: install redis on RHEL based distros
        yum:
-       name: ansible
-       state: present
-       update_cache: true
+         name: ansible
+         state: present
+         update_cache: true
        become: true
        when: ansible_os_family == 'RedHat'
