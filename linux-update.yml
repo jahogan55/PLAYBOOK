@@ -4,25 +4,24 @@
   gather_facts: False
   become_user: root
   become_method: su
-  use_backend: yum3
    
   tasks:
      - name: update the system
        yum:
          name: "*"
          state: latest
-         use_backend: yum3
+         use_backend: auto
          
      - name: ensure wget is installed
        yum:
          name: wget
          state: present
          update_cache: true
-         use_backend: yum3
+         use_backend: auto
          
      - name: install redis on RHEL based distros
        yum:
          name: ansible
          state: present
          update_cache: true
-         use_backend: yum3
+         use_backend: auto
