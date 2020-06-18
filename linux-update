@@ -4,20 +4,22 @@
    gather_facts: no
    become: yes
    become_method: enable
-- name: update the system
-    yum:
-      name: "*"
-      state: latest
-- name: ensure wget is installed
-  yum:
-    name: wget
-    state: present
-    update_cache: true
-  become: true
-- name: install redis on RHEL based distros
-  yum:
-    name: ansible
-    state: present
-    update_cache: true
-  become: true
-  when: ansible_os_family == 'RedHat'
+   
+   tasks:
+     - name: update the system
+       yum:
+         name: "*"
+         state: latest
+     - name: ensure wget is installed
+       yum:
+         name: wget
+         state: present
+         update_cache: true
+         become: true
+     - name: install redis on RHEL based distros
+       yum:
+       name: ansible
+       state: present
+       update_cache: true
+       become: true
+       when: ansible_os_family == 'RedHat'
