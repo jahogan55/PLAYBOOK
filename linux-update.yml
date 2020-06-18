@@ -4,6 +4,7 @@
   gather_facts: False
   become_user: root
   become_method: su
+  use_backend: yum3
    
   tasks:
      - name: update the system
