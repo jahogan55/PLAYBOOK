@@ -11,16 +11,19 @@
          name: "*"
          state: latest
        become: true
+       become_user: root
      - name: ensure wget is installed
        yum:
          name: wget
          state: present
          update_cache: true
        become: true
+       become_user: root
      - name: install redis on RHEL based distros
        yum:
          name: ansible
          state: present
          update_cache: true
        become: true
+       become_user: root
        when: ansible_os_family == 'RedHat'
