@@ -22,4 +22,3 @@
          name: ansible
          state: present
          update_cache: true
-       when: ansible_os_family == 'RedHat'
