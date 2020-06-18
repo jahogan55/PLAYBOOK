@@ -11,6 +11,10 @@
          commands:
           - configure terminal
           - mac address-table notification mac-move
+          - ntp server 216.239.35.0
+          - ntp server 216.239.35.4
+          - ntp server 216.239.35.8
+          - ntp server 216.239.35.12
           - exit
      - name: clear
        ios_command:
